@@ -1,0 +1,259 @@
+.navbar {
+    border-radius: 0.5rem;
+}
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+.btn {
+    width: 200px;
+    background-color: #6f7070;
+    font-size: 20px;
+    border: none;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.nav-item {
+    padding-right: 30px;
+}
+
+.container-carousel {
+    padding: 2rem;
+    padding-top: 10rem;
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    max-width: 40%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.slider-wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); /* hsla is used for changing hue, saturation, lightness and Alpha(opaceity) */
+    border-radius: 1rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.about-us-section {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.about-us-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-us-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container-fluid h1 {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.container-fluid hr {
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.col-md-3 {
+    text-align: center;
+}
+
+.col-md-3 .btn {
+    width: 300px;
+}
+
+.col-md-3 img {
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.row {
+    padding: 20px 0;
+}
+
+.img-responsive {
+    width: 80%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: lightgrey;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.form button {
+    width: 300px; 
+}
+.cart-page {
+    width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    align-items: center;
+}
+
+.total-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.product-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.prod-image img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+    /* add margin to separate from the product info */
+}
+.checkout-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+input[type="number"] {
+    width: 40px;
+    /* Setting the width of 'Quantity Box as needed */
+}
+
+.input-box {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.checkout-form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.checkout-body {
+    background-color: #ffffff;
+}
+
+.payment-options {
+    text-align: left;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: auto; /* pushing the footer to bottom */
+    padding: 20px; /* spacing for aesthetics */
+}
+
+.footer-logo {
+    padding-left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.footer-text {
+    font-size: 20px;
+    padding-top: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.footer-social li {
+    padding-right: 50px;
+    margin-left: 10px;
+}
+.button-align
+{
+    text-align: center;
+}
